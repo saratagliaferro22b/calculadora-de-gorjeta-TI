@@ -29,14 +29,15 @@ header{
     padding-block: 2.8rem;
 }
 
-
-main {   
-     background-color: var(--white)
+main{
+    background-color: var(--white);
     padding: 2rem;
+    border-radius: 1.5625rem 1.5625rem 0 0;
 }
-
+    
 .conta,
-.gorjeta {
+.gorjeta,
+.pessoas {
     margin-bottom: 2rem;
 }
 
@@ -112,3 +113,19 @@ main {
 
 .gorjeta #outra ::placeholder{
     color: var(--green-300);
+}
+
+.pessoas #erro{
+    display: none;
+}
+
+.resultados{
+    background-color: var(--green-800);
+    border-radius: 0.9375rem;
+    padding: 1.5rem;
+}
+.resultados div{
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+}
