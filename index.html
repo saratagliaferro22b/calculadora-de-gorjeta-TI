@@ -2,80 +2,78 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <title>calculadora de gorjeta</title>
-
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-  <header>
-    <img src="./images/logo.svg" alt="logo do splitter">
-  </header>
-<main>
-<section class="informacoes">
-    <form action="">
-        <div class="conta">
-            <label for="conta">conta</label>
+    <h1>calculadora de gorjeta</h1>
+    <header>
+        <img src="./images/logo.svg" alt="logo do splitter">
+    </header>
+   <main>
+    <section class="informacoes">
+
+        <form action="">
+
+            <div class="conta">
             <div>
+                <label for="conta"></label>
                 <img src="./images/icon-dollar.svg" alt="icone do cifrão">
-                <input type="number" name="conta" id="conta" placeholder="0">
+                <input type="number" name="conta" id="conta">
+            
             </div>
-        </div>
+
+            </div>
+            <div class="gorjeta">
+                <label form="">selecione a gorjeta %</label>
+
+                <div>
+
+                    <input type="button" value="5%">
+                    <input type="button" value="10%">
+                    <input type="button" value="15%">
+                    <input type="button" value="25%">
+                    <input type="button" value="50%">
+                    <input type="number" name="outra" id="outra">
+
+                </div>
+                <div class="pessoas">
+                    <label for="conta"></label>
+                    <img src="./images/icon-person.svg"alt="icone da pessoa">
+                    <input type="number" name="conta" id="quantidade de pesssoas">
+                <p>nao pode ser zero</p>
+                
+                </div>
+    
+
+
+                </div>
+
+            </div>
+        </form>
+    </section>
+
+    <section resultados>
 
         <div class="gorjeta">
-            <label for="outra">selecione a gorjeta %</label>
+            <p>
 
-            <div>
-                <input type="button" value="5%">
-                <input type="button" value="10%">
-                <input type="button" value="15%">
-                <input type="button" value="25%">
-                <input type="button" value="50%">
-                <input type="number" name="outra" id="outra" placeholder="outra">
-            </div>
+                <strong>gorjeta</strong> <br>
+                /pessoa 
+            </p>
+            <strong>$ 0.00</strong>
+
         </div>
-        <div class="pessoas">
-           <div class="textos">
-            <label for="pessoas">quantidade de pessoas</label>
-            <p id "erro">não pode ser zero</p>
-           </div>
-            <div class="input-box" id="erro-div">
-                <img src="./images/icon-person.svg" alt="icone da pessoa">
-                <input type="number" name="pessoas" id="pessoas" placeholder="0">
-            </div>
+        <div class="total">
+            <p>
+
+                <strong>total</strong> <br>
+                /pessoa 
+            </p>
+            <strong>$ 0.00</strong>
+
         </div>
-        
-    </form>
-</section>
-
-<section class="resultados">
-
-    <div>
-        <div class="gorjeta-total">
-        <p>
-            <strong>gorjeta</strong> <br>
-            /pessoa
-        </p>
-
-        <strong>R$0.00</strong>
-    </div>
-
-    <div class="total">
-        <p>
-            <strong>total</strong> <br>
-            /pessoa
-        </p>
-
-        <strong>R$0.00</strong>
-    </div>
-</div>
-
-    <button>limpar</button>
-</section>
-</main>
-
+    </section>
+   </main>
 </body>
 </html>

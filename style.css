@@ -81,12 +81,13 @@ main{
     color: var(--green-300);
 }
 
-.conta:has(input:focus) div,
+.conta:has(input:focus) div {
+    outline: 2px solid var(--light-green)
+}
 .conta:has(input:hover) .input-box,
 .pessoas:has(input:focus) .input-box,
 .gorjeta #outra:focus
 .gorjeta #outra:hover {
-    outline: 2px solid var(--light-green);
     cursor: pointer;
 }
 
@@ -94,10 +95,16 @@ main{
     margin-top: 1rem;
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-}
+grid-template-columns: 1fr 1fr;
+gap: 1rem;
 
+}
+.gorjeta #outra{
+    width: 100;
+    background-color: var(--green-100);
+    color: var(--green-500);
+
+   
 .gorjeta input{
     font-size: 1.5rem;
     font-weight: 700;
@@ -107,7 +114,7 @@ main{
     padding-block: 0.4rem;
     border-radius: 0.3125rem;
     background-color: var(--green-800);
-    color var(--white);
+    color: var(--white);
 }
 
  .gorjeta input{type="button"}:hover,
@@ -115,44 +122,48 @@ main{
     background-color: var(--green-hover);
     cursor: pointer;
  }
-
-
-.gorjeta #outra{
-    width: 100%;
+ 
+ .gorjeta #outra{
+    width: 100;
     background-color: var(--green-100);
-    color: var(--green-800);
-}
+    color: var(--green-500);
 
-.gorjeta #outra ::placeholder{
+
+.gorjeta #outra::placeholder{
     color: var(--green-300);
 }
-.pessoas.textos{
+.pessoas.textos {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.pessoas #erro-div{
+.pessoas #erro-div {
 outline: 2px solid var(--danger);
 
 }
 
-.pessoas #erro{
+.pessoas #erro {
     font-size: 0.75rem;
     align-items: center;
     justify-content: space-between;
     color: var(--danger);
     font-synthesis-weight: 700;
+    display: none;
+    
 }
 
-.resultados{
+.resultados {
     background-color: var(--green-800);
     border-radius: 0.9375rem;
     padding: 1.5rem;
 }
-.resultados div div {
+ .resultados div {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+ }
 }
 .resultados{
     background-color: var(--green-800);
